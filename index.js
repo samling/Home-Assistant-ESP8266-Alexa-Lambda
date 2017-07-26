@@ -8,7 +8,7 @@ var handlers = {
         if (displayText) {
             let alexa = this
             let alexaEmit = function() {
-                alexa.emit(':tell', 'Hello world!');
+                alexa.emit(':tell', 'Whatup, Sam!');
             }
             esp8266.displayText("Test text", alexaEmit);
         } else {

@@ -46,7 +46,7 @@ get started:
 13. If you haven't configured a new role, create a new one and attach the AWSLambdaBasicExecutionRole policy to it
 14. Add or verify that the Alexa Skills Kit is in the triggers
 15. Add the certs created 
-16. Zip the *contents* of this repository (not the folder itself), easiest done from outside the folder: zip -r alexa-esp8266.zip Home-Assistant-ESP8266-Alexa-Lambda/\*
+16. Zip the *contents* of this repository (not the folder itself); the `build.sh` script in this repository will create a zip file in the directory above this one
 17. Under the "Code" tab, choose "Upload a .ZIP file" and upload the zip you just created
 18. Test by either issuing a voice command like "Alexa, tell trigger\_name "Hello world" or by testing via the Alexa Skills Kit or Lambda test interfaces
 
