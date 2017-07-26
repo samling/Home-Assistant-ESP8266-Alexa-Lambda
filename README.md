@@ -1,4 +1,4 @@
-### Lambda App for Alexa to IoT
+# Lambda App for Alexa to IoT
 
 ## Description
 This is a NodeJS application meant to be run in an AWS Lambda function in
@@ -7,15 +7,15 @@ command.
 
 There are quite a few prerequisites to this. Starting with hardware:
 
-# Hardware
+### Hardware
 * Amazon Echo, Echo Dot, or some other Alexa device
 * ESP8266-based microcontroller
 
-# Software
+### Software
 * Internet browser
 * AWS account
 
-## Configuration
+### Configuration
 There is a wealth of information out there on how to get started with the Alexa
 Skills Kit as well as how to use it with Lambda. Here's a rough list of steps to
 get started:
@@ -32,11 +32,17 @@ get started:
 10. Under "Configuration", choose "AWS Lambda ARN" and supply the ARN of your Lambda skill
 11. (Optional) Configure Account Linking for user info to be supplied to Alexa using your IAM ID and secret from earlier
 12. Back in your Lambda function, set it up for this repo's code:
+
         Runtime: Node.js 6.10
+
         Handler: index.handler
+
         Role: Create a new role (if you don't have one) or Choose an existing role
+
         Existing role (if you have one): Your existing role
+
         Description: A description of this function
+
 13. If you haven't configured a new role, create a new one and attach the AWSLambdaBasicExecutionRole policy to it
 14. Add or verify that the Alexa Skills Kit is in the triggers
 15. Add the certs created 
@@ -62,7 +68,7 @@ You should see this response following a successful trigger:
 
 Or you will hear Alexa respond "Hello world!".
 
-# Additional Reading
+### Additional Reading
 As mentioned, there is a wealth of reading available on configuring this chain. Here are
 some links I've found useful:
 
