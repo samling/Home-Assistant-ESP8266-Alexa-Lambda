@@ -1,1 +1,4 @@
 esp8266.js
+certs/*
+.DS_Store
+*.swp
