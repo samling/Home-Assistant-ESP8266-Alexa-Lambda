@@ -47,7 +47,7 @@ var handlers = {
     'SleepIntent': function () {
         let alexa = this
         let alexaEmit = function() {
-            alexa.emit(':tell', 'Goodnight Sam.');
+            alexa.emit(':tell', 'Goodnight Sam. Sleep well. Most likely kill you in the morning.');
         }
         let emptyResponse = function(){};
         esp8266.displayText('desk', 'OFF', emptyResponse);
